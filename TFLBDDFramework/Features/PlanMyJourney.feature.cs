@@ -76,8 +76,8 @@ namespace TFLBDDFramework.Features
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("I can plan my journey successfully")]
         [NUnit.Framework.CategoryAttribute("MyJourney")]
-        [NUnit.Framework.TestCaseAttribute("London Bridge", "Stratford", null)]
-        [NUnit.Framework.TestCaseAttribute("Liverpool Street", "Euston", null)]
+        [NUnit.Framework.TestCaseAttribute("Paddington (London), Paddington Station", "Liverpool Street, Liverpool Street Station", null)]
+        [NUnit.Framework.TestCaseAttribute("Heathrow Airport Terminal 4", "Romford Rail Station", null)]
         public virtual void ICanPlanMyJourneySuccessfully(string source, string destination, string[] exampleTags)
         {
             string[] @__tags = new string[] {

@@ -19,6 +19,7 @@ namespace TFLBDDFramework
         private static ExtentTest Sceanrio;
         public static PageHelper help;
         public static PlanjourneyHelper planjourneyHelper;
+        public static JourneyPageHelper journeyPageHelper;
         #endregion
 
         [BeforeScenario]
@@ -29,6 +30,7 @@ namespace TFLBDDFramework
             SingletonBaseClass.getDriverInstance().launchBrowser();           
             help=new PageHelper(driver);
             planjourneyHelper = new PlanjourneyHelper(driver);
+            journeyPageHelper = new JourneyPageHelper(driver);
             help.AcceptCookies();
             Sceanrio = Feature.CreateNode<Scenario>(ScenarioContext.Current.ScenarioInfo.Title);
         }

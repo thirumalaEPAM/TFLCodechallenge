@@ -14,12 +14,16 @@ namespace HelperLibrary
         CommonUtility commonUtility;        
         public void planmyjourney(string fromplace,string toplace)
         {
-            commonUtility = new CommonUtility(webdriver);
+                       
             commonUtility.SendText(PlnJourneyRepo.eltFromLocation, fromplace);
             commonUtility.SendText(PlnJourneyRepo.eltToLocation, toplace);
 
 
+        }       
+
+        public PlanjourneyHelper(IWebDriver driver) {
+            this.webdriver = driver;
+            commonUtility = new CommonUtility(webdriver);
         }
-        public PlanjourneyHelper(IWebDriver driver) { this.webdriver = driver; }
     }
 }

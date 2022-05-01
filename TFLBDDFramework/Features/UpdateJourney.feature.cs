@@ -77,20 +77,11 @@ namespace TFLBDDFramework.Features
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("I can edit my journy details and preferences")]
         [NUnit.Framework.CategoryAttribute("tag1")]
-        [NUnit.Framework.TestCaseAttribute("London Bridge", "Stratford", "true", null)]
-        public virtual void ICanEditMyJournyDetailsAndPreferences(string destination, string journeyDate, string bus, string[] exampleTags)
+        public virtual void ICanEditMyJournyDetailsAndPreferences()
         {
-            string[] @__tags = new string[] {
+            string[] tagsOfScenario = new string[] {
                     "tag1"};
-            if ((exampleTags != null))
-            {
-                @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
-            }
-            string[] tagsOfScenario = @__tags;
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            argumentsOfScenario.Add("Destination", destination);
-            argumentsOfScenario.Add("JourneyDate", journeyDate);
-            argumentsOfScenario.Add("Bus", bus);
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("I can edit my journy details and preferences", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 6
 this.ScenarioInitialize(scenarioInfo);
@@ -118,13 +109,28 @@ this.ScenarioInitialize(scenarioInfo);
 #line 8
  testRunner.When("I can click on Edit Journey button for change my journey details", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
+                TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
+                            "Key",
+                            "Value"});
+                table1.AddRow(new string[] {
+                            "Destination",
+                            "Euston"});
+                table1.AddRow(new string[] {
+                            "JourneyDate",
+                            "Thu 12 May"});
+                table1.AddRow(new string[] {
+                            "Bus",
+                            "true"});
+                table1.AddRow(new string[] {
+                            "Tram",
+                            "true"});
 #line 9
- testRunner.And(string.Format("I Change My preferences {0} {1} {2}", destination, journeyDate, bus), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("I Change My preferences", ((string)(null)), table1, "And ");
 #line hidden
-#line 10
+#line 16
  testRunner.And("I  Save the preferences and click on UpdateJourney button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 11
+#line 17
     testRunner.Then("I can view my journey details updated successfully", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -138,7 +144,7 @@ this.ScenarioInitialize(scenarioInfo);
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("I can view My recent journey plans", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 18
+#line 20
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -158,13 +164,13 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 19
+#line 21
  testRunner.Given("I can Launch TFL application and do my journey plan", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 20
+#line 22
  testRunner.When("I Navigate to Plan My Journey and click on Recents tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 21
+#line 23
  testRunner.Then("I can view the List of my Recent journey plans", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }

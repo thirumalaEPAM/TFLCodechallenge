@@ -17,7 +17,11 @@ namespace ObjectReporsitoryLibrary
         public static string journeyDate = "Sun 15 May";
         public static string journeyTime = "02:30";
         public static string fastestTrans = "Fastest by public transport";
-        public static string cyclingandOther = "Cycling and other options";
+        public static string cyclingandOther = "Cycling and other options";        
+        public static string source = "Heathrow Airport Terminal 4";
+        public static string destination = "Romford Rail Station";
+
+        
 
         #endregion
     }

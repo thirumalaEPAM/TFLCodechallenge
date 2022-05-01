@@ -20,7 +20,8 @@ namespace ObjectReporsitoryLibrary
         public static By eltDate = By.XPath("//select[@id='Date']");
         public static By eltTime = By.XPath("//select[@id='Time']");
         public static By eltValidationError = By.XPath("//li[@class='field-validation-error']");
-
+        public static By eltRecentJournys = By.XPath("//a[text()='Recents']");
+        public static By eltRecentsList = By.XPath("//div[@id='jp-recent-content-jp-']//child::a[contains(@href,'plan-a-journey')]");
         //input[@Id='InputFrom']
     }
 }

@@ -29,6 +29,7 @@ namespace TFLBDDFramework.StepDefinitions
         public void GivenILaunchTFLPortalAndEnterInvalidSourceAndDestinationAsAnd(string xXX, string yYY)
         {
             BddHooks.planjourneyHelper.planmyjourney(xXX, yYY);
+
         }
 
 
@@ -36,6 +37,7 @@ namespace TFLBDDFramework.StepDefinitions
         public void WhenICanClickOnPlanMyJourneyButton()
         {
             BddHooks.help.ButtonClick(PlnJourneyRepo.eltPlanMyJourneybtn);
+            BddHooks.help.waitforpageLoad();
         }
 
         [Then(@"I can view ""([^""]*)""")]
@@ -43,15 +45,11 @@ namespace TFLBDDFramework.StepDefinitions
         {
            string journeyresultsTxt= BddHooks.help.getText(JourneyResultsRepo.eltJourneypage);
            string fromPlace= BddHooks.help.getText(JourneyResultsRepo.eltFrom);
-           string toPlace= BddHooks.help.getText(JourneyResultsRepo.eltTo);
-           string cycling = BddHooks.help.getText(JourneyResultsRepo.eltCyclingandOther);
-           string fastTrans=BddHooks.help.getText(JourneyResultsRepo.eltPublicTrans);
+           string toPlace= BddHooks.help.getText(JourneyResultsRepo.eltTo);           
            Assert.AreEqual(p0, journeyresultsTxt);
            Assert.AreEqual(Source, fromPlace);
            Assert.AreEqual(Destination, toPlace);
-           //Assert.AreEqual(Constants.cyclingandOther, cycling);
-           //Assert.AreEqual(Constants.fastestTrans,fastTrans);
-            
+           Assert.IsTrue(BddHooks.journeyPageHelper.ValidationJourneyResults());            
         }
         
         [Then(@"I can view  monadatory fields validations on From and To fields")]

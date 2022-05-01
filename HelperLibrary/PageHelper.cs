@@ -10,29 +10,58 @@ namespace HelperLibrary
     public class PageHelper
     {
         IWebDriver webdriver;
-
         CommonUtility Commonobj;       
 
         public void ButtonClick(By by)
-        {
-            Commonobj = new CommonUtility(webdriver);
+        {           
             Commonobj.ClickElement(by);
         }
-       public void selectValuefromDropdown(By by,string value)
+        public void waitforpageLoad()
         {
-            Commonobj = new CommonUtility(webdriver);
+            System.Threading.Thread.Sleep(15000);
+        }
+
+        public void ButtonClick1(By by)
+        {            
+            Commonobj.ClickListWebElements(by);
+        }
+        public void pageScrollUp()
+        {
+            IJavaScriptExecutor js = (IJavaScriptExecutor)webdriver;
+            js.ExecuteScript("window.scrollBy(0, -250)", "");
+
+        }
+        public void SendText(By by,string text)
+        {
+            
+            Commonobj.SendText(by,text);
+        }
+        public void selectValuefromDropdown(By by,string value)
+        {
+            
             Commonobj.SelectValue(by,value);
         }
         public string getText(By by)
         {
-            Commonobj = new CommonUtility(webdriver);
+           
             return Commonobj.getElementText(by);
+        }        
+        public string LeavingDateConversion(string date)
+        {                       
+            string result = string.Empty;
+
+            string[] strArr=date.Split(' ');
+
+            result= strArr[0].Substring(0,3)+" "+ strArr[1].Substring(0, 2)+" "+ strArr[2].Substring(0, 3);
+
+            return result;
+        
         }
         public void AcceptCookies() 
         {
             try
             {
-                Commonobj = new CommonUtility(webdriver);
+                
                 Commonobj.pageScroll(PlnJourneyRepo.eltAcceptCookiesbtn);
                 Commonobj.ClickElement(PlnJourneyRepo.eltAcceptCookiesbtn);                
                 Commonobj.pageScrollandClick(PlnJourneyRepo.eltSaveCookies);
@@ -43,12 +72,10 @@ namespace HelperLibrary
             }
 
         }
-        public int RondomNum()
-        {
-
-            Random rnd = new Random();
-
-            return rnd.Next(200, 1000);
+        public string RondomNum()        {
+            
+            string datetime = DateTime.Now.ToString();
+            return datetime;
         }
 
         public String TakeScreenshot()
@@ -64,6 +91,7 @@ namespace HelperLibrary
         public PageHelper(IWebDriver driver)
         {
             this.webdriver = driver;
+            Commonobj = new CommonUtility(webdriver);
         }
 
     }

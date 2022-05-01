@@ -7,9 +7,9 @@ Scenario Outline: I can plan my journey successfully
 	Then I can view "Journey results"	
 
 Examples:
-| source   | destination |
-| London Bridge | Stratford |
-| Liverpool Street | Euston |
+| source					  | destination          |
+| Paddington (London), Paddington Station				  | Liverpool Street, Liverpool Street Station     |
+| Heathrow Airport Terminal 4 | Romford Rail Station |
 
 Scenario: I can not plan my journey without entering Source and Destinations
 	Given I launched TFL portal and Enter Journey Time without  giving the source and destions
