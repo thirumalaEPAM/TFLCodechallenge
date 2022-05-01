@@ -92,15 +92,7 @@ namespace TFLBDDFramework
             }
 
         }
-        //[BeforeScenario(Order = 1)]
-        //public void FirstBeforeScenario()
-        //{
-        //    // Example of ordering the execution of hooks
-        //    
-
-        //    //TODO: implement logic that has to run before executing each scenario
-        //}
-
+        
         [AfterScenario]
         public void AfterScenario()
         {

@@ -13,6 +13,10 @@ namespace HelperLibrary
         IWebDriver webdriver;
         CommonUtility commonUtility;
 
+        /**
+         * Update the Journey details and Preferences 
+         * ***/
+
         public void UpdateJourneyPreferences(Dictionary<string,string>  dect) 
         {
             try
@@ -42,6 +46,10 @@ namespace HelperLibrary
             }
         }
 
+
+        /**
+         * Based on the journey results , this method will return true /false 
+         * ***/
         public Boolean ValidationJourneyResults() {
             Boolean flag=false;
             string result=string.Empty;
@@ -56,6 +64,7 @@ namespace HelperLibrary
             {
                 result = commonUtility.getElementText(JourneyResultsRepo.eltFastTrans);
                 if (result == Constants.fastestTrans) flag = true;
+                
 
             }
             return flag; 
@@ -68,7 +77,7 @@ namespace HelperLibrary
             Boolean flag =false;
 
             if(dictCount==elementsCount) flag= true;
-
+            
             return flag;
         }
         public JourneyPageHelper(IWebDriver driver)

@@ -28,7 +28,13 @@ namespace HelperLibrary
         public void pageScrollUp()
         {
             IJavaScriptExecutor js = (IJavaScriptExecutor)webdriver;
-            js.ExecuteScript("window.scrollBy(0, -250)", "");
+            js.ExecuteScript("window.scrollBy(0, -350)", "");
+
+        }
+        public void pageScrollDown()
+        {
+            IJavaScriptExecutor js = (IJavaScriptExecutor)webdriver;
+            js.ExecuteScript("window.scrollBy(0, 300)", "");
 
         }
         public void SendText(By by,string text)
@@ -68,14 +74,15 @@ namespace HelperLibrary
                 Commonobj.ClickElement(PlnJourneyRepo.eltSaveCookies);
             }
             catch (Exception ex) 
-            { 
+            {
+                Console.WriteLine("Exception: {0}", ex.Message);
             }
 
         }
         public string RondomNum()        {
             
             string datetime = DateTime.Now.ToString();
-            return datetime;
+            return datetime.Replace("/", "").Replace(":", "");
         }
 
         public String TakeScreenshot()

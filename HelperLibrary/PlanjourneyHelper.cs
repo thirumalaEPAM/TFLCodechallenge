@@ -11,7 +11,11 @@ namespace HelperLibrary
     public class PlanjourneyHelper
     {
         IWebDriver webdriver;
-        CommonUtility commonUtility;        
+        CommonUtility commonUtility;
+
+        /**
+         * This method select the source and destination locations
+         * ***/
         public void planmyjourney(string fromplace,string toplace)
         {
                        

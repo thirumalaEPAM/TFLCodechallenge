@@ -65,6 +65,16 @@ namespace TFLBDDFramework.StepDefinitions
         public void ThenICanViewTheListOfMyRecentJourneyPlans()
         {
             Boolean validation= BddHooks.journeyPageHelper.validation(1, PlnJourneyRepo.eltRecentsList);
+            if (validation == false)
+            {
+                BddHooks.planjourneyHelper.planmyjourney(Constants.source, Constants.destination);
+                BddHooks.help.ButtonClick(PlnJourneyRepo.eltPlanMyJourneybtn);
+                BddHooks.help.waitforpageLoad();
+                BddHooks.help.pageScrollUp();
+                BddHooks.help.ButtonClick(JourneyResultsRepo.eltPlanmyjourneylink);
+                BddHooks.help.pageScrollDown();
+            }
+            validation = BddHooks.journeyPageHelper.validation(1, PlnJourneyRepo.eltRecentsList);
             Assert.IsTrue(validation);
         }
     }
