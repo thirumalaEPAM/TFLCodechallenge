@@ -1,0 +1,12 @@
+C:\Thirumala\PersonalDocs\TFLBDDFramework\ObjectReporsitoryLibrary\bin\Debug\net6.0\ObjectReporsitoryLibrary.deps.json
+C:\Thirumala\PersonalDocs\TFLBDDFramework\ObjectReporsitoryLibrary\bin\Debug\net6.0\ObjectReporsitoryLibrary.dll
+C:\Thirumala\PersonalDocs\TFLBDDFramework\ObjectReporsitoryLibrary\bin\Debug\net6.0\ObjectReporsitoryLibrary.pdb
+C:\Thirumala\PersonalDocs\TFLBDDFramework\ObjectReporsitoryLibrary\obj\Debug\net6.0\ObjectReporsitoryLibrary.csproj.AssemblyReference.cache
+C:\Thirumala\PersonalDocs\TFLBDDFramework\ObjectReporsitoryLibrary\obj\Debug\net6.0\ObjectReporsitoryLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Thirumala\PersonalDocs\TFLBDDFramework\ObjectReporsitoryLibrary\obj\Debug\net6.0\ObjectReporsitoryLibrary.AssemblyInfoInputs.cache
+C:\Thirumala\PersonalDocs\TFLBDDFramework\ObjectReporsitoryLibrary\obj\Debug\net6.0\ObjectReporsitoryLibrary.AssemblyInfo.cs
+C:\Thirumala\PersonalDocs\TFLBDDFramework\ObjectReporsitoryLibrary\obj\Debug\net6.0\ObjectReporsitoryLibrary.csproj.CoreCompileInputs.cache
+C:\Thirumala\PersonalDocs\TFLBDDFramework\ObjectReporsitoryLibrary\obj\Debug\net6.0\ObjectReporsitoryLibrary.dll
+C:\Thirumala\PersonalDocs\TFLBDDFramework\ObjectReporsitoryLibrary\obj\Debug\net6.0\refint\ObjectReporsitoryLibrary.dll
+C:\Thirumala\PersonalDocs\TFLBDDFramework\ObjectReporsitoryLibrary\obj\Debug\net6.0\ObjectReporsitoryLibrary.pdb
+C:\Thirumala\PersonalDocs\TFLBDDFramework\ObjectReporsitoryLibrary\obj\Debug\net6.0\ref\ObjectReporsitoryLibrary.dll
