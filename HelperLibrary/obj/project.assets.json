@@ -319,7 +319,7 @@
           "lib/netstandard2.0/WebDriver.dll": {}
         }
       },
-      "Selenium.WebDriver.ChromeDriver/99.0.4844.5100": {
+      "Selenium.WebDriver.ChromeDriver/102.0.5005.6100": {
         "type": "package",
         "build": {
           "build/Selenium.WebDriver.ChromeDriver.targets": {}
@@ -1432,7 +1432,7 @@
         "dependencies": {
           "Selenium.Support": "3.141.0",
           "Selenium.WebDriver": "3.141.0",
-          "Selenium.WebDriver.ChromeDriver": "99.0.4844.5100"
+          "Selenium.WebDriver.ChromeDriver": "102.0.5005.6100"
         },
         "compile": {
           "bin/placeholder/ObjectReporsitoryLibrary.dll": {}
@@ -1876,10 +1876,10 @@
         "selenium.webdriver.nuspec"
       ]
     },
-    "Selenium.WebDriver.ChromeDriver/99.0.4844.5100": {
-      "sha512": "021uEuHHgaZ9X2oSCaClBun+azybXg5lw/Pq79fc3D98X0oEpHPuXRTRthxzmqTwH6CGnRNfTvHMZ9xdvHDLzQ==",
+    "Selenium.WebDriver.ChromeDriver/102.0.5005.6100": {
+      "sha512": "USHcIBWjJDcCU5SCTa2P79676EEaz/F48E0Y4UBt5WlrV559phhUE582PkHU7nj5oW+M+eL5IlVVCRdXWekxcQ==",
       "type": "package",
-      "path": "selenium.webdriver.chromedriver/99.0.4844.5100",
+      "path": "selenium.webdriver.chromedriver/102.0.5005.6100",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1890,7 +1890,7 @@
         "driver/mac64/chromedriver",
         "driver/win32/chromedriver.exe",
         "nupkg-icon.png",
-        "selenium.webdriver.chromedriver.99.0.4844.5100.nupkg.sha512",
+        "selenium.webdriver.chromedriver.102.0.5005.6100.nupkg.sha512",
         "selenium.webdriver.chromedriver.nuspec"
       ]
     },
@@ -5309,7 +5309,7 @@
     "net6.0": [
       "ObjectReporsitoryLibrary >= 1.0.0",
       "Selenium.WebDriver >= 3.141.0",
-      "Selenium.WebDriver.ChromeDriver >= 99.0.4844.5100"
+      "Selenium.WebDriver.ChromeDriver >= 102.0.5005.6100"
     ]
   },
   "packageFolders": {
@@ -5366,7 +5366,7 @@
           },
           "Selenium.WebDriver.ChromeDriver": {
             "target": "Package",
-            "version": "[99.0.4844.5100, )"
+            "version": "[102.0.5005.6100, )"
           }
         },
         "imports": [
@@ -5384,7 +5384,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }
